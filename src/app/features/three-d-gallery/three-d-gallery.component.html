@@ -1,0 +1,51 @@
+<section id="models" class="page-padding py-24 bg-white dark:bg-[#040810] relative transition-colors duration-500">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 transition-colors duration-500">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary dark:text-white mb-4">{{ 'GALLERY3D.TITLE' | translate }}</h2>
+        <p class="text-gray-base dark:text-gray-400">{{ 'GALLERY3D.SUBTITLE' | translate }}</p>
+      </div>
+      <div>
+        <a href="https://3dwarehouse.sketchup.com" target="_blank" class="text-primary dark:text-white font-bold text-sm tracking-wide hover:text-black dark:hover:text-gray-300 transition-colors flex items-center gap-2 border-b-2 border-primary dark:border-white pb-1">
+          {{ 'GALLERY3D.VIEW_ALL' | translate }}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Grid of Models -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 animate-slide-up transition-colors duration-500">
+      
+      <!-- Model 1 -->
+      <article class="clean-border dark:border-white/10 bg-secondary dark:bg-[#0c1220] p-3 group hover:border-gray-300 dark:hover:border-white/30 transition-colors hover:shadow-md hover:-translate-y-1 transform duration-300">
+        <div class="aspect-square bg-gray-100 dark:bg-black rounded-xl flex items-center justify-center relative overflow-hidden group-hover:bg-white dark:group-hover:bg-gray-900 transition-colors border border-gray-100 dark:border-white/5">
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+            <svg class="w-12 h-12 text-gray-400 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2 0v20c5.07-.5 9-4.79 9-10s-3.93-9.5-9-10z"/></svg>
+            <span class="text-gray-500 dark:text-gray-500 font-medium text-xs uppercase tracking-widest">{{ 'GALLERY3D.IFRAME_PLACEHOLDER' | translate }}</span>
+          </div>
+        </div>
+        <div class="pt-5 px-3 pb-3">
+           <h3 class="font-bold text-primary dark:text-white text-2xl font-serif">{{ 'GALLERY3D.MOD1_TITLE' | translate }}</h3>
+           <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ 'GALLERY3D.MOD1_DESC' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Model 2 -->
+      <article class="clean-border dark:border-white/10 bg-secondary dark:bg-[#0c1220] p-3 group hover:border-gray-300 dark:hover:border-white/30 transition-colors hover:shadow-md hover:-translate-y-1 transform duration-300">
+        <div class="aspect-square bg-gray-100 dark:bg-black rounded-xl flex items-center justify-center relative overflow-hidden group-hover:bg-white dark:group-hover:bg-gray-900 transition-colors border border-gray-100 dark:border-white/5">
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+            <svg class="w-12 h-12 text-gray-400 dark:text-gray-600 group-hover:text-primary dark:group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2 0v20c5.07-.5 9-4.79 9-10s-3.93-9.5-9-10z"/></svg>
+            <span class="text-gray-500 dark:text-gray-500 font-medium text-xs uppercase tracking-widest">{{ 'GALLERY3D.IFRAME_PLACEHOLDER' | translate }}</span>
+          </div>
+        </div>
+        <div class="pt-5 px-3 pb-3">
+           <h3 class="font-bold text-primary dark:text-white text-2xl font-serif">{{ 'GALLERY3D.MOD2_TITLE' | translate }}</h3>
+           <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ 'GALLERY3D.MOD2_DESC' | translate }}</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>

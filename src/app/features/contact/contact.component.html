@@ -1,0 +1,51 @@
+<section id="contact" class="page-padding py-24 bg-white dark:bg-[#040810] relative transition-colors duration-500">
+  <div class="max-w-5xl mx-auto bg-secondary dark:bg-[#0c1220] clean-border dark:border-white/10 p-10 md:p-16 shadow-sm flex flex-col md:flex-row gap-16 relative overflow-hidden animate-slide-up transition-colors duration-500">
+    
+    <div class="w-full md:w-1/2 relative z-10 transition-colors duration-500">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary dark:text-white mb-6">{{ 'CONTACT.TITLE' | translate }}</h2>
+      <p class="mb-10 text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">{{ 'CONTACT.SUBTITLE' | translate }}</p>
+      
+      <div class="space-y-6">
+        <a href="https://www.linkedin.com/in/guido-asplanatti" target="_blank" class="flex items-center gap-4 group">
+          <div class="w-12 h-12 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center bg-white dark:bg-[#1a2233] group-hover:border-primary dark:group-hover:border-white transition-colors shadow-sm">
+             <span class="text-primary dark:text-white font-serif font-bold text-sm">in</span>
+          </div>
+          <span class="font-medium text-gray-600 dark:text-gray-300 group-hover:text-primary dark:group-hover:text-white transition-colors">{{ 'CONTACT.LINKEDIN' | translate }}</span>
+        </a>
+        <a href="https://github.com/Gasol1na" target="_blank" class="flex items-center gap-4 group">
+          <div class="w-12 h-12 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center bg-white dark:bg-[#1a2233] group-hover:border-primary dark:group-hover:border-white transition-colors shadow-sm">
+             <span class="text-primary dark:text-white font-serif font-bold text-sm">gh</span>
+          </div>
+          <span class="font-medium text-gray-600 dark:text-gray-300 group-hover:text-primary dark:group-hover:text-white transition-colors">{{ 'CONTACT.GITHUB' | translate }}</span>
+        </a>
+        <a href="https://behance.net/guidoasplanatti" target="_blank" class="flex items-center gap-4 group">
+          <div class="w-12 h-12 rounded-full border border-gray-200 dark:border-white/10 flex items-center justify-center bg-white dark:bg-[#1a2233] group-hover:border-primary dark:group-hover:border-white transition-colors shadow-sm">
+             <span class="text-primary dark:text-white font-serif font-bold text-sm">Bē</span>
+          </div>
+          <span class="font-medium text-gray-600 dark:text-gray-300 group-hover:text-primary dark:group-hover:text-white transition-colors">{{ 'CONTACT.BEHANCE' | translate }}</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 relative z-10 transition-colors duration-500">
+      <form class="flex flex-col gap-6">
+        <div class="flex flex-col">
+          <label class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-2">{{ 'CONTACT.NAME' | translate }}</label>
+          <input type="text" class="w-full bg-white dark:bg-[#131b2b] dark:text-white placeholder-gray-400 dark:placeholder-gray-500 clean-border dark:border-white/10 px-4 py-3 text-primary focus:outline-none focus:border-primary dark:focus:border-white focus:ring-1 focus:ring-primary dark:focus:ring-white transition-all shadow-sm" [placeholder]="'CONTACT.NAME' | translate">
+        </div>
+        <div class="flex flex-col">
+          <label class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-2">{{ 'CONTACT.EMAIL' | translate }}</label>
+          <input type="email" class="w-full bg-white dark:bg-[#131b2b] dark:text-white placeholder-gray-400 dark:placeholder-gray-500 clean-border dark:border-white/10 px-4 py-3 text-primary focus:outline-none focus:border-primary dark:focus:border-white focus:ring-1 focus:ring-primary dark:focus:ring-white transition-all shadow-sm" [placeholder]="'CONTACT.EMAIL' | translate">
+        </div>
+        <div class="flex flex-col">
+          <label class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-2">{{ 'CONTACT.MESSAGE' | translate }}</label>
+          <textarea rows="4" class="w-full bg-white dark:bg-[#131b2b] dark:text-white placeholder-gray-400 dark:placeholder-gray-500 clean-border dark:border-white/10 px-4 py-3 text-primary focus:outline-none focus:border-primary dark:focus:border-white focus:ring-1 focus:ring-primary dark:focus:ring-white transition-all shadow-sm resize-none" [placeholder]="'CONTACT.MESSAGE' | translate"></textarea>
+        </div>
+        <button class="w-full py-4 bg-primary dark:bg-white text-white dark:text-primary font-semibold text-[1rem] rounded-full hover:bg-black dark:hover:bg-gray-200 transition-colors shadow-md mt-2">
+          {{ 'CONTACT.SEND' | translate }}
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>

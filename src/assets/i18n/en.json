@@ -1,0 +1,31 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "COURSES": "Courses",
+    "INSTRUCTOR": "Instructor",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "BADGE": "8-Week Intensive Course",
+    "TITLE": "3D Architecture Modeling: From Sketches to Professional AI Portfolio",
+    "SUBTITLE": "Master an optimized senior workflow integrating 3D Modeling, Virtual Tours, V-Ray, Post-processing, and Gemini AI.",
+    "BTN_ENROLL": "Enroll Now",
+    "BTN_PROGRAM": "View Program"
+  },
+  "COURSES": {
+    "TITLE": "8-Week Intensive Program",
+    "SUBTITLE": "B-Learning methodology combining in-person classes, virtual tutoring, and YouTube content",
+    "COURSE_1_TITLE": "Casa H",
+    "COURSE_1_DESC": "Complete workflow and AI-generated facades.",
+    "COURSE_2_TITLE": "ARCO Apartment",
+    "COURSE_2_DESC": "Photorealistic interiors and IES lighting.",
+    "COURSE_3_TITLE": "ARCO Building",
+    "COURSE_3_DESC": "Large scale and Behance portfolio."
+  },
+  "ABOUT": {
+    "TITLE": "Guido Asplanatti",
+    "SUBTITLE": "Senior Programming Technician & 3D Modeler",
+    "BIO_1": "I am a Senior Programming Technician and 3D modeler with experience in architecture and realistic renders. Currently working at Ferro Construcciones S.R.L. and as a freelance developer.",
+    "BIO_2": "I live in Concordia, Entre Ríos. When I'm not coding or studying Civil Engineering at UTN, I enjoy playing amateur soccer and running 10k marathons."
+  }
+}

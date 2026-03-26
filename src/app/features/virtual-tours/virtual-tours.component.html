@@ -1,0 +1,46 @@
+<section id="tours" class="page-padding py-24 bg-secondary dark:bg-[#0c1220] relative border-y border-gray-200 dark:border-white/10 transition-colors duration-500">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6 transition-colors duration-500">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary dark:text-white mb-4">{{ 'TOURS.TITLE' | translate }}</h2>
+        <p class="max-w-2xl text-gray-base dark:text-gray-400">{{ 'TOURS.SUBTITLE' | translate }}</p>
+      </div>
+      <div>
+         <span class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest border border-gray-200 dark:border-white/10 px-4 py-2 rounded-full bg-white dark:bg-[#1a2233] shadow-sm">
+           Powered by Kuula
+         </span>
+      </div>
+    </div>
+
+    <!-- Main viewer container -->
+    <div class="relative w-full aspect-video md:aspect-[21/9] bg-white dark:bg-black rounded-2xl overflow-hidden clean-border dark:border-white/10 shadow-sm group animate-slide-up transition-colors duration-500">
+      
+      <!-- Placeholder 360 viewer area -->
+      <div class="absolute inset-0 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center">
+        <!-- Light overlay for premium look -->
+        <div class="absolute inset-0 bg-white/20 dark:bg-black/60 transition-opacity group-hover:bg-transparent dark:group-hover:bg-black/20"></div>
+        <span class="z-10 text-primary dark:text-white font-bold text-sm uppercase tracking-widest border border-white/40 dark:border-white/20 px-6 py-3 rounded-full bg-white/90 dark:bg-black/80 backdrop-blur-md group-hover:opacity-0 transition-opacity duration-300 shadow-sm pointer-events-none">
+          Click to Interact
+        </span>
+      </div>
+
+      <!-- 2D Minimap Overlay -->
+      <div class="absolute bottom-6 left-6 w-48 h-48 md:w-56 md:h-56 bg-white/95 dark:bg-black/90 backdrop-blur-xl rounded-2xl border border-gray-200 dark:border-white/10 p-4 shadow-xl transition-transform hover:-translate-y-1 hover:shadow-2xl z-20 flex flex-col">
+        <div class="flex items-center justify-between mb-2">
+           <span class="text-primary dark:text-white font-bold text-xs uppercase tracking-wide">Minimap</span>
+           <svg class="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        </div>
+        <div class="relative w-full flex-grow bg-gray-50 dark:bg-[#131b2b] rounded-lg border border-gray-200 dark:border-white/5 overflow-hidden flex items-center justify-center transition-colors duration-500">
+          <span class="text-gray-400 dark:text-gray-500 text-[10px] text-center px-4 font-medium uppercase tracking-widest">Floorplan</span>
+          
+          <!-- Hotspot 1 -->
+          <button class="absolute top-1/3 left-1/3 w-3.5 h-3.5 rounded-full bg-primary dark:bg-white border-2 border-white dark:border-primary shadow-md hover:scale-125 transition-transform" title="Kitchen"></button>
+          
+          <!-- Hotspot 2 -->
+          <button class="absolute bottom-1/4 right-1/4 w-3.5 h-3.5 rounded-full bg-white dark:bg-primary border-2 border-primary dark:border-white shadow-md hover:scale-125 transition-transform" title="Living Room"></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

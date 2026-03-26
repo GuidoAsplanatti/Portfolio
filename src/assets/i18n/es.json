@@ -1,0 +1,31 @@
+{
+  "NAV": {
+    "HOME": "Inicio",
+    "COURSES": "Cursos",
+    "INSTRUCTOR": "Instructor",
+    "CONTACT": "Contacto"
+  },
+  "HERO": {
+    "BADGE": "Curso Intensivo 8 Semanas",
+    "TITLE": "Modelado 3D de Arquitectura: De Bocetos a Portfolio Profesional con IA",
+    "SUBTITLE": "Domina un workflow senior optimizado integrando Modelado 3D, Recorridos Virtuales, V-Ray, Post-procesado y Gemini AI.",
+    "BTN_ENROLL": "Inscribirse ahora",
+    "BTN_PROGRAM": "Ver programa"
+  },
+  "COURSES": {
+    "TITLE": "Programa intensivo de 8 semanas",
+    "SUBTITLE": "Metodología B-Learning que combina clases presenciales, tutorías virtuales y contenido en YouTube",
+    "COURSE_1_TITLE": "Casa H",
+    "COURSE_1_DESC": "Workflow completo y generación de fachadas con IA.",
+    "COURSE_2_TITLE": "Depto ARCO",
+    "COURSE_2_DESC": "Interiores fotorrealistas e iluminación IES.",
+    "COURSE_3_TITLE": "Edificio ARCO",
+    "COURSE_3_DESC": "Gran escala y portfolio en Behance."
+  },
+  "ABOUT": {
+    "TITLE": "Guido Asplanatti",
+    "SUBTITLE": "Técnico Superior Programador & Render 3D",
+    "BIO_1": "Soy Técnico Superior Programador y modelador 3D con experiencia en arquitectura y renders realistas. Actualmente trabajo en Ferro Construcciones S.R.L. y como desarrollador freelance.",
+    "BIO_2": "Resido en Concordia, Entre Ríos. Cuando no estoy programando o estudiando Ingeniería Civil en la UTN, disfruto de jugar al fútbol amateur y correr maratones de 10k."
+  }
+}

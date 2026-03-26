@@ -1,0 +1,40 @@
+<header class="w-full page-padding py-6 flex justify-between items-center bg-secondary dark:bg-black sticky top-0 z-50 border-b border-gray-200 dark:border-white/10 shadow-sm transition-colors duration-500">
+  <a href="#home" class="text-2xl font-serif font-bold text-primary dark:text-white tracking-wide">
+    Guido Asplanatti.
+  </a>
+  <nav class="hidden md:flex space-x-8 items-center text-[1rem] font-medium text-gray-base dark:text-gray-400">
+    <a href="#home" class="hover:text-primary dark:hover:text-white transition-colors duration-500">{{ 'NAV.HOME' | translate }}</a>
+    <a href="#gallery" class="hover:text-primary dark:hover:text-white transition-colors duration-500">{{ 'NAV.PORTFOLIO' | translate }}</a>
+    <a href="#tours" class="hover:text-primary dark:hover:text-white transition-colors duration-500">{{ 'NAV.TOURS' | translate }}</a>
+    <a href="#course" class="hover:text-primary dark:hover:text-white transition-colors duration-500">{{ 'NAV.COURSE' | translate }}</a>
+    <a href="#about" class="hover:text-primary dark:hover:text-white transition-colors duration-500">{{ 'NAV.ABOUT' | translate }}</a>
+    <a href="#contact" class="px-6 py-2.5 bg-primary dark:bg-white text-white dark:text-primary rounded-full hover:bg-black dark:hover:bg-gray-200 transition-colors shadow-sm">{{ 'NAV.CONTACT' | translate }}</a>
+    
+    <div class="flex items-center gap-4 border-l border-gray-300 dark:border-gray-700 pl-6 ml-2">
+      <button (click)="toggleLanguage()" class="font-bold text-sm tracking-widest uppercase hover:text-primary dark:hover:text-white transition-opacity hover:opacity-80">
+        {{ translate.currentLang === 'es' ? 'EN' : 'ES' }}
+      </button>
+
+      <button (click)="toggleTheme()" class="relative w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center overflow-hidden hover:bg-gray-200 dark:hover:bg-gray-700 active:scale-95 transition-all outline-none">
+         <div class="relative w-full h-full flex items-center justify-center" *ngIf="{ isDark: themeService.isDarkMode$ | async } as theme">
+            <!-- Sun Icon (Light Mode) -->
+            <svg [ngClass]="{'scale-0 opacity-0 rotate-90': theme.isDark, 'scale-100 opacity-100 rotate-0': !theme.isDark}" 
+                 class="absolute inset-auto w-5 h-5 text-orange-500 transition-all duration-500 ease-in-out transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+            <!-- Moon Icon (Dark Mode) -->
+            <svg [ngClass]="{'scale-100 opacity-100 rotate-0': theme.isDark, 'scale-0 opacity-0 -rotate-90': !theme.isDark}" 
+                 class="absolute inset-auto w-5 h-5 text-yellow-400 transition-all duration-500 ease-in-out transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+         </div>
+      </button>
+    </div>
+  </nav>
+
+  <button class="md:hidden text-primary dark:text-white p-2 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+  </button>
+</header>

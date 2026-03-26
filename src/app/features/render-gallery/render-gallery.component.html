@@ -1,0 +1,65 @@
+<section id="gallery" class="page-padding py-24 bg-secondary dark:bg-[#0c1220] relative border-y border-gray-200 dark:border-white/10 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto flex flex-col items-center">
+    <div class="text-center mb-16 max-w-2xl mx-auto transition-colors duration-500">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary dark:text-white mb-6">{{ 'PORTFOLIO.TITLE' | translate }}</h2>
+      <p class="text-[1.1rem] text-gray-500 dark:text-gray-400">{{ 'PORTFOLIO.SUBTITLE' | translate }}</p>
+    </div>
+
+    <!-- Masonry Layout Approximation using Columns -->
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8 w-full animate-slide-up transition-colors duration-500">
+      
+      <!-- Image Item 1 -->
+      <div class="break-inside-avoid relative group overflow-hidden cursor-pointer hover-lift">
+        <div class="aspect-[4/3] bg-gray-200 dark:bg-black flex items-center justify-center clean-border dark:border-white/10 shadow-sm group-hover:shadow-lg transition-all duration-300">
+          <span class="text-gray-400 dark:text-gray-600 text-sm font-medium">Exterior Visualization</span>
+        </div>
+        <div class="absolute inset-0 bg-white/95 dark:bg-black/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 clean-border dark:border-white/20 backdrop-blur-sm">
+          <span class="text-primary dark:text-white font-serif font-bold text-2xl mb-2">Modern Living</span>
+          <span class="text-gray-500 dark:text-gray-400 text-xs font-bold uppercase tracking-widest">Architecture</span>
+        </div>
+      </div>
+
+      <!-- Image Item 2 (taller) -->
+      <div class="break-inside-avoid relative group overflow-hidden cursor-pointer hover-lift">
+        <div class="aspect-[3/4] bg-gray-200 dark:bg-black flex items-center justify-center clean-border dark:border-white/10 shadow-sm group-hover:shadow-lg transition-all duration-300">
+          <span class="text-gray-400 dark:text-gray-600 text-sm font-medium">Interior Rendering</span>
+        </div>
+        <div class="absolute inset-0 bg-white/95 dark:bg-black/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 clean-border dark:border-white/20 backdrop-blur-sm">
+          <span class="text-primary dark:text-white font-serif font-bold text-2xl mb-2">Urban Facade</span>
+          <span class="text-gray-500 dark:text-gray-400 text-xs font-bold uppercase tracking-widest">Real Estate</span>
+        </div>
+      </div>
+
+      <!-- Image Item 3 -->
+      <div class="break-inside-avoid relative group overflow-hidden cursor-pointer hover-lift">
+        <div class="aspect-square bg-gray-200 dark:bg-black flex items-center justify-center clean-border dark:border-white/10 shadow-sm group-hover:shadow-lg transition-all duration-300">
+          <span class="text-gray-400 dark:text-gray-600 text-sm font-medium">Concept Design</span>
+        </div>
+        <div class="absolute inset-0 bg-white/95 dark:bg-black/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 clean-border dark:border-white/20 backdrop-blur-sm">
+          <span class="text-primary dark:text-white font-serif font-bold text-2xl mb-2">Minimalist Studio</span>
+          <span class="text-gray-500 dark:text-gray-400 text-xs font-bold uppercase tracking-widest">Interior Design</span>
+        </div>
+      </div>
+      
+      <!-- Image Item 4 -->
+      <div class="break-inside-avoid relative group overflow-hidden cursor-pointer hover-lift">
+        <div class="aspect-[16/9] bg-gray-200 dark:bg-black flex items-center justify-center clean-border dark:border-white/10 shadow-sm group-hover:shadow-lg transition-all duration-300">
+          <span class="text-gray-400 dark:text-gray-600 text-sm font-medium">Night Render</span>
+        </div>
+        <div class="absolute inset-0 bg-white/95 dark:bg-black/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 clean-border dark:border-white/20 backdrop-blur-sm">
+          <span class="text-primary dark:text-white font-serif font-bold text-2xl mb-2">Twilight Architecture</span>
+          <span class="text-gray-500 dark:text-gray-400 text-xs font-bold uppercase tracking-widest">Exterior</span>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="mt-16 text-center transition-opacity duration-500">
+      <a href="https://behance.net/guidoasplanatti" target="_blank" class="px-10 py-4 bg-primary dark:bg-primary-light text-white dark:text-primary text-[1rem] font-semibold rounded-full hover:bg-black dark:hover:bg-white transition-colors duration-300 shadow-md inline-flex items-center gap-3">
+        Behance Portfolio
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
