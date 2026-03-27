@@ -1,0 +1,42 @@
+<section id="projects" class="page-padding py-24 bg-secondary dark:bg-[#0c1220] relative border-y border-gray-200 dark:border-white/10 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto flex flex-col items-center">
+    
+    <div class="text-center mb-16 max-w-2xl mx-auto transition-colors duration-500">
+      <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary dark:text-white mb-6">Proyectos Web</h2>
+      <p class="text-[1.1rem] text-gray-500 dark:text-gray-400">Desarrollos de software y aplicaciones interactivas que resuelven problemas del mundo real.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full animate-slide-up transition-colors duration-500">
+      
+      <!-- Project Card -->
+      <article *ngFor="let project of projects" class="flex flex-col bg-white dark:bg-[#131b2b] rounded-2xl overflow-hidden clean-border dark:border-white/5 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+        
+        <!-- Image Container -->
+        <div class="aspect-[16/10] w-full relative overflow-hidden bg-gray-200 dark:bg-black">
+          <img [src]="project.image" alt="Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-2xl font-serif font-bold text-primary dark:text-white mb-3 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">{{ project.title }}</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-[0.95rem] leading-relaxed mb-8 flex-grow">
+            {{ project.description }}
+          </p>
+          
+          <!-- Footer Stack -->
+          <div class="mt-auto pt-5 border-t border-gray-100 dark:border-white/10">
+            <span class="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest block mb-4">Tech Stack</span>
+            <div class="flex flex-wrap gap-2">
+               <span *ngFor="let tech of project.stack" class="px-3 py-1 bg-gray-100 dark:bg-black text-gray-600 dark:text-gray-400 text-xs font-semibold rounded-full clean-border dark:border-white/5">
+                 {{ tech }}
+               </span>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>

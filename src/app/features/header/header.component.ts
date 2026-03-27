@@ -11,17 +11,17 @@ import { ThemeService } from '../../core/services/theme.service';
 })
 export class HeaderComponent {
   themeService = inject(ThemeService);
-  translate = inject(TranslateService);
+  // translate = inject(TranslateService);
 
   constructor() {
-    this.translate.addLangs(['en', 'es']);
-    this.translate.setDefaultLang('en');
+    // this.translate.addLangs(['en', 'es']);
+    // this.translate.setDefaultLang('en');
     
     // Initialize language from local storage
     if (typeof window !== 'undefined' && localStorage) {
-       const browserLang = localStorage.getItem('lang') || this.translate.getBrowserLang();
-       const langToUse = browserLang?.match(/en|es/) ? browserLang : 'en';
-       this.translate.use(langToUse);
+       // const browserLang = localStorage.getItem('lang') || this.translate.getBrowserLang();
+       // const langToUse = browserLang?.match(/en|es/) ? browserLang : 'en';
+       // this.translate.use(langToUse);
     }
   }
 
@@ -30,11 +30,13 @@ export class HeaderComponent {
   }
 
   toggleLanguage() {
+    /*
     const current = this.translate.currentLang;
     const next = current === 'en' ? 'es' : 'en';
     this.translate.use(next);
     if (typeof window !== 'undefined' && localStorage) {
        localStorage.setItem('lang', next);
     }
+    */
   }
 }

@@ -10,6 +10,8 @@ import { ThreeDGalleryComponent } from './features/three-d-gallery/three-d-galle
 import { RenderGalleryComponent } from './features/render-gallery/render-gallery.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { FooterComponent } from './features/footer/footer.component';
+import { SkillsComponent } from './features/skills/skills.component';
+import { ProjectsComponent } from './features/projects/projects.component';
 
 @Component({
   selector: 'app-root',
@@ -24,16 +26,18 @@ import { FooterComponent } from './features/footer/footer.component';
     ThreeDGalleryComponent,
     RenderGalleryComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsComponent,
+    ProjectsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  private translate = inject(TranslateService);
+  // private translate = inject(TranslateService);
 
   constructor() {
-    this.translate.setDefaultLang('es');
-    this.translate.use('es');
+    // this.translate.setDefaultLang('es');
+    // this.translate.use('es');
   }
 }
