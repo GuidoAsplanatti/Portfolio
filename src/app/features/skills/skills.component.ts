@@ -58,10 +58,24 @@ export class SkillsComponent {
     ]
   };
 
+  universityDegree = {
+    title: 'Técnico Superior Programador (UTN/IES)',
+    image: 'assets/images/certificates/cert-uni.jpg'
+  };
+
   courseSkills = [
-    { title: 'Técnico Superior Programador', provider: 'UTN/IES' },
-    { title: 'Curso Intensivo Modelado 3D de Arquitectura con IA', provider: 'Guido Asplanatti' },
-    { title: 'Fundamentos de Metodología BIM 2.0', provider: 'Instituto de Arquitectura' }
+    { 
+      title: 'Curso Intensivo Modelado 3D de Arquitectura con IA (Guido Asplanatti)', 
+      image: 'assets/images/certificates/cert-1.jpg' 
+    },
+    { 
+      title: 'Fundamentos de Metodología BIM 2.0 (Instituto de Arquitectura)', 
+      image: 'assets/images/certificates/cert-2.jpg' 
+    },
+    { 
+      title: 'Curso de Visualización Arquitectónica con V-Ray/Unreal', 
+      image: 'assets/images/certificates/cert-3.jpg' 
+    }
   ];
 
   setFilter(filter: 'arch' | 'dev' | 'office' | 'courses') {

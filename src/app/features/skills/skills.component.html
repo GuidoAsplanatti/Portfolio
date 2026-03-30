@@ -43,12 +43,13 @@
     <div class="w-full relative min-h-[300px]">
       
       <!-- 1. Arch Grid -->
-      <div *ngIf="activeFilter === 'arch'" class="grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in w-full max-w-4xl mx-auto">
-        <div *ngFor="let skill of archSkills" class="flex flex-col items-center justify-center bg-gray-50 dark:bg-[#0c1220] p-6 rounded-2xl clean-border dark:border-white/10 hover:-translate-y-1 hover:shadow-md transition-all duration-300 group">
-          <div class="w-14 h-14 rounded-xl bg-white dark:bg-[#131b2b] clean-border dark:border-white/10 shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-             <span class="text-primary dark:text-white font-bold text-lg">{{ skill.name.charAt(0) }}</span>
+      <div *ngIf="activeFilter === 'arch'" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 animate-fade-in w-full max-w-5xl mx-auto">
+        <!-- REMINDER: Place actual .png or .svg logos in src/assets/images/logos/ -->
+        <div *ngFor="let skill of archSkills" class="flex items-center gap-3 p-3 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-100 dark:border-neutral-800 hover:shadow-md transition-all duration-300 group">
+          <div class="w-10 h-10 rounded-lg bg-gray-50 dark:bg-neutral-800 flex items-center justify-center p-2 group-hover:scale-105 transition-transform">
+            <img src="assets/images/logos/placeholder.png" class="w-6 h-6 object-contain" alt="Logo {{ skill.name }}">
           </div>
-          <span class="font-medium text-sm text-center text-primary dark:text-white">{{ skill.name }}</span>
+          <span class="font-medium text-sm text-primary dark:text-neutral-200">{{ skill.name }}</span>
         </div>
       </div>
 
@@ -57,27 +58,39 @@
          
          <div class="flex flex-col">
             <h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-100 dark:border-white/10 pb-2">Frontend</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-              <div *ngFor="let skill of devSkills.frontend" class="flex flex-col items-center justify-center bg-gray-50 dark:bg-[#0c1220] py-5 px-3 rounded-2xl clean-border dark:border-white/10 hover:-translate-y-1 hover:shadow-md transition-all duration-300 group">
-                <span class="font-medium text-sm text-center text-primary dark:text-white">{{ skill.name }}</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <!-- REMINDER: Place actual .png or .svg logos in src/assets/images/logos/ -->
+              <div *ngFor="let skill of devSkills.frontend" class="flex items-center gap-3 p-3 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-100 dark:border-neutral-800 hover:shadow-md transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gray-50 dark:bg-neutral-800 flex items-center justify-center p-1.5">
+                  <img src="assets/images/logos/placeholder.png" class="w-5 h-5 object-contain" alt="Logo">
+                </div>
+                <span class="font-medium text-sm text-primary dark:text-neutral-200">{{ skill.name }}</span>
               </div>
             </div>
          </div>
 
          <div class="flex flex-col">
             <h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-100 dark:border-white/10 pb-2">Backend</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-              <div *ngFor="let skill of devSkills.backend" class="flex flex-col items-center justify-center bg-gray-50 dark:bg-[#0c1220] py-5 px-3 rounded-2xl clean-border dark:border-white/10 hover:-translate-y-1 hover:shadow-md transition-all duration-300 group">
-                <span class="font-medium text-sm text-center text-primary dark:text-white">{{ skill.name }}</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <!-- REMINDER: Place actual .png or .svg logos in src/assets/images/logos/ -->
+              <div *ngFor="let skill of devSkills.backend" class="flex items-center gap-3 p-3 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-100 dark:border-neutral-800 hover:shadow-md transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gray-50 dark:bg-neutral-800 flex items-center justify-center p-1.5">
+                  <img src="assets/images/logos/placeholder.png" class="w-5 h-5 object-contain" alt="Logo">
+                </div>
+                <span class="font-medium text-sm text-primary dark:text-neutral-200">{{ skill.name }}</span>
               </div>
             </div>
          </div>
 
          <div class="flex flex-col">
             <h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-100 dark:border-white/10 pb-2">Herramientas</h3>
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div *ngFor="let skill of devSkills.tools" class="flex flex-col items-center justify-center bg-gray-50 dark:bg-[#0c1220] py-5 px-3 rounded-2xl clean-border dark:border-white/10 hover:-translate-y-1 hover:shadow-md transition-all duration-300 group">
-                <span class="font-medium text-sm text-center text-primary dark:text-white">{{ skill.name }}</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <!-- REMINDER: Place actual .png or .svg logos in src/assets/images/logos/ -->
+              <div *ngFor="let skill of devSkills.tools" class="flex items-center gap-3 p-3 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-100 dark:border-neutral-800 hover:shadow-md transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gray-50 dark:bg-neutral-800 flex items-center justify-center p-1.5">
+                  <img src="assets/images/logos/placeholder.png" class="w-5 h-5 object-contain" alt="Logo">
+                </div>
+                <span class="font-medium text-sm text-primary dark:text-neutral-200">{{ skill.name }}</span>
               </div>
             </div>
          </div>
@@ -88,40 +101,68 @@
          
         <div class="flex-1 flex flex-col">
            <h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-100 dark:border-white/10 pb-2">Microsoft Office</h3>
-           <div class="flex flex-col gap-3">
-             <div *ngFor="let skill of officeSkills.microsoft" class="flex items-center bg-gray-50 dark:bg-[#0c1220] py-4 px-6 rounded-xl clean-border dark:border-white/10 hover:-translate-x-1 transition-all duration-300 group">
-               <div class="w-2 h-2 rounded-full bg-blue-500 mr-4"></div>
-               <span class="font-medium text-[0.95rem] text-primary dark:text-white">{{ skill.name }}</span>
+           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+             <!-- REMINDER: Place actual .png or .svg logos in src/assets/images/logos/ -->
+             <div *ngFor="let skill of officeSkills.microsoft" class="flex items-center gap-3 p-3 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-100 dark:border-neutral-800 hover:shadow-md transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gray-50 dark:bg-neutral-800 flex items-center justify-center p-1.5">
+                  <img src="assets/images/logos/placeholder.png" class="w-5 h-5 object-contain" alt="Logo">
+                </div>
+                <span class="font-medium text-sm text-primary dark:text-neutral-200">{{ skill.name }}</span>
              </div>
            </div>
         </div>
 
         <div class="flex-1 flex flex-col">
            <h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-100 dark:border-white/10 pb-2">Google Workspace</h3>
-           <div class="flex flex-col gap-3">
-             <div *ngFor="let skill of officeSkills.google" class="flex items-center bg-gray-50 dark:bg-[#0c1220] py-4 px-6 rounded-xl clean-border dark:border-white/10 hover:-translate-x-1 transition-all duration-300 group">
-               <div class="w-2 h-2 rounded-full bg-amber-500 mr-4"></div>
-               <span class="font-medium text-[0.95rem] text-primary dark:text-white">{{ skill.name }}</span>
+           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+             <!-- REMINDER: Place actual .png or .svg logos in src/assets/images/logos/ -->
+             <div *ngFor="let skill of officeSkills.google" class="flex items-center gap-3 p-3 bg-white dark:bg-neutral-900 rounded-lg shadow-sm border border-neutral-100 dark:border-neutral-800 hover:shadow-md transition-all duration-300 group">
+                <div class="w-8 h-8 rounded bg-gray-50 dark:bg-neutral-800 flex items-center justify-center p-1.5">
+                  <img src="assets/images/logos/placeholder.png" class="w-5 h-5 object-contain" alt="Logo">
+                </div>
+                <span class="font-medium text-sm text-primary dark:text-neutral-200">{{ skill.name }}</span>
              </div>
            </div>
         </div>
 
      </div>
 
-     <!-- 4. Courses Grid (Horizontal Cards) -->
-     <div *ngIf="activeFilter === 'courses'" class="flex flex-col gap-5 animate-fade-in w-full max-w-3xl mx-auto">
-        <div *ngFor="let course of courseSkills" class="flex flex-col md:flex-row md:items-center justify-between bg-gray-50 dark:bg-[#0c1220] p-6 md:p-8 rounded-2xl clean-border dark:border-white/10 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
-          <div class="flex-grow">
-            <h3 class="font-serif font-bold text-xl text-primary dark:text-white mb-2 group-hover:text-amber-500 transition-colors">{{ course.title }}</h3>
-            <span class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">{{ course.provider }}</span>
+      <!-- 4. Formación y Cursos (Uniform Grid) -->
+      <div *ngIf="activeFilter === 'courses'" class="w-full max-w-6xl mx-auto animate-fade-in">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- University Degree (Now part of the grid) -->
+          <div class="relative aspect-[16/10] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group">
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
+              [style.background-image]="'url(' + universityDegree.image + ')'">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-5 z-20">
+              <span class="text-amber-500 font-bold uppercase tracking-[0.2em] text-[0.6rem] mb-1">Título Primario</span>
+              <h3 class="text-white text-base md:text-lg font-serif font-bold leading-tight group-hover:text-amber-400 transition-colors">
+                {{ universityDegree.title }}
+              </h3>
+            </div>
           </div>
-          <div class="mt-4 md:mt-0 md:ml-6 ml-auto">
-             <div class="w-10 h-10 rounded-full bg-white dark:bg-[#131b2b] clean-border dark:border-white/10 flex items-center justify-center text-primary dark:text-white group-hover:scale-110 transition-transform">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-             </div>
+
+          <!-- Other Courses -->
+          <div *ngFor="let course of courseSkills" class="relative aspect-[16/10] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group">
+            <div 
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" 
+              [style.background-image]="'url(' + course.image + ')'">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10"></div>
+            <div class="absolute inset-0 flex flex-col justify-end p-5 z-20">
+              <h3 class="text-white text-base md:text-lg font-bold leading-tight group-hover:text-amber-400 transition-colors">
+                {{ course.title }}
+              </h3>
+            </div>
           </div>
+
         </div>
-     </div>
+      </div>
 
     </div>
 
