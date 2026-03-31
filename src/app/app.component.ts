@@ -12,6 +12,7 @@ import { ContactComponent } from './features/contact/contact.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { SkillsComponent } from './features/skills/skills.component';
 import { ProjectsComponent } from './features/projects/projects.component';
+import { SpotifyPlayerComponent } from './features/spotify-player/spotify-player.component';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,8 @@ import { ProjectsComponent } from './features/projects/projects.component';
     ContactComponent,
     FooterComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SpotifyPlayerComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
