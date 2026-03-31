@@ -60,21 +60,21 @@ export class SkillsComponent {
 
   universityDegree = {
     title: 'Técnico Superior Programador (UTN/IES)',
-    image: 'assets/images/certificates/cert-uni.jpg'
+    image: 'assets/images/certificates/cert-uni.png'
   };
 
   courseSkills = [
     { 
       title: 'Curso Intensivo Modelado 3D de Arquitectura con IA (Guido Asplanatti)', 
-      image: 'assets/images/certificates/cert-1.jpg' 
+      image: 'assets/images/certificates/cert-1.png' 
     },
     { 
       title: 'Fundamentos de Metodología BIM 2.0 (Instituto de Arquitectura)', 
-      image: 'assets/images/certificates/cert-2.jpg' 
+      image: 'assets/images/certificates/cert-2.png' 
     },
     { 
       title: 'Curso de Visualización Arquitectónica con V-Ray/Unreal', 
-      image: 'assets/images/certificates/cert-3.jpg' 
+      image: 'assets/images/certificates/cert-3.png' 
     }
   ];
 
